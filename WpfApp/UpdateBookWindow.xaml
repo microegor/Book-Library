@@ -7,13 +7,36 @@
         mc:Ignorable="d"
         Title="UpdateBookWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel>
-            <TextBox x:Name="TitleBox" Width="300" Margin="10"/>
-            <TextBox x:Name="AuthorBox" Width="300" Margin="10"/>
-            <TextBox x:Name="ISBNBox" Width="300" Margin="10" />
-            <TextBox x:Name="YearBox" Width="300" Margin="10" />
-            <TextBox x:Name="DescriptionBox" Width="300" Margin="10" />
-            <Button Content="Обновить" Width="100" Margin="10" Click="UpdateButton_Click"/>
-        </StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Название" Grid.Row="0" Grid.Column="0" Margin="10"/>
+            <TextBox x:Name="TitleBox" Grid.Row="0" Grid.Column="1" Margin="10"/>
+
+            <Label Content="Автор" Grid.Row="1" Grid.Column="0" Margin="10"/>
+            <TextBox x:Name="AuthorBox" Grid.Row="1" Grid.Column="1" Margin="10"/>
+
+            <Label Content="ISBN" Grid.Row="2" Grid.Column="0" Margin="10"/>
+            <TextBox x:Name="ISBNBox" Grid.Row="2" Grid.Column="1" Margin="10"/>
+
+            <Label Content="Год" Grid.Row="3" Grid.Column="0" Margin="10"/>
+            <TextBox x:Name="YearBox" Grid.Row="3" Grid.Column="1" Margin="10"/>
+
+            <Label Content="Описание" Grid.Row="4" Grid.Column="0" Margin="10"/>
+            <TextBox x:Name="DescriptionBox" Grid.Row="4" Grid.Column="1" Margin="10"/>
+
+            <Button Content="Обновить" Grid.Row="5" Grid.Column="1" Width="100" Margin="10" Click="UpdateButton_Click"/>
+        </Grid>
     </Grid>
 </Window>
