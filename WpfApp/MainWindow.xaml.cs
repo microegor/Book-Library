@@ -27,6 +27,7 @@ namespace WpfApp
         {
             InitializeComponent();
             IBookRepository repository = new FileBookRepository("books.txt");
+            //IBookRepository repository = new MemoryBookRepository();
             bookService = new BookService(repository);
             LoadBooks();
         }
