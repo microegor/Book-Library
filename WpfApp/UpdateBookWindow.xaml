@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp.UpdateBookWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="UpdateBookWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="TitleBox" Width="300" Margin="10"/>
+            <TextBox x:Name="AuthorBox" Width="300" Margin="10"/>
+            <TextBox x:Name="ISBNBox" Width="300" Margin="10" />
+            <TextBox x:Name="YearBox" Width="300" Margin="10" />
+            <TextBox x:Name="DescriptionBox" Width="300" Margin="10" />
+            <Button Content="Обновить" Width="100" Margin="10" Click="UpdateButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
