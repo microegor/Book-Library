@@ -44,6 +44,7 @@
     <Compile Include="Book.cs" />
     <Compile Include="BookService.cs" />
     <Compile Include="FileBookRepository.cs" />
+    <Compile Include="FileBookRepositoryXML.cs" />
     <Compile Include="IBookRepository.cs" />
     <Compile Include="MemoryBookRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
